@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+li {
+  display: inline;
+}
+.header {
+  color: peru;
+}
+.logo {
+  font-size: 3rem;
+  background-color: purple;
+}
