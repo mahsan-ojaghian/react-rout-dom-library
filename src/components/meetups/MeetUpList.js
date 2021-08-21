@@ -1,15 +1,16 @@
+import classes from "./MeetUpItem.module.css";
 const MeetUpItem = (props) => {
   return (
-    <li>
-      <div>
+    <li className={classes.item}>
+      <div className={classes.image}>
         <img src={props.img} alt="item" />
       </div>
-      <div>
+      <div className={classes.content}>
         <h3>{props.last_name}</h3>
         <h5>{props.email}</h5>
         <p>{props.gender}</p>
       </div>
-      <div>
+      <div className={classes.actions}>
         <button>to favorite</button>
       </div>
     </li>
