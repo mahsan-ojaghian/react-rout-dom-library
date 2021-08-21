@@ -78,8 +78,8 @@ function AllMeetUpsPage() {
     <section>
       <h1>All meetUp</h1>
       <ul>
-        {mydata.map((item) => {
-          return <li>{item.first_name}</li>;
+        {mydata.map((item, index) => {
+          return <li key={item.id}>{item.first_name}</li>;
         })}
       </ul>
     </section>
