@@ -1,14 +1,28 @@
 ul {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 li {
   display: inline;
+  padding: 0 1rem;
+}
+a {
+  text-decoration: none;
+  color: palevioletred;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: purple;
 }
 .header {
   color: peru;
+  display: flex;
 }
 .logo {
-  font-size: 3rem;
+  font-size: 1rem;
   background-color: purple;
+  padding: 0.5rem;
+  text-align: center;
 }
