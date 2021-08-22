@@ -11,7 +11,7 @@ const MeetUpItem = (props) => {
         <p>{props.gender}</p>
       </div>
       <div className={classes.actions}>
-        <button>to favorite</button>
+        <button>{props.first_name}</button>
       </div>
     </li>
   );
