@@ -20,7 +20,7 @@ const NewMeetUpForm = (props) => {
         description: enteredDesc
       }
     ];
-    console.log(meetUpData);
+    props.onAddMeetup(meetUpData);
   };
 
   return (
