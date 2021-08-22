@@ -1,11 +1,8 @@
 {
-  "name": "react",
+  "name": "react-router",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "using a library.",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "17.0.2",
