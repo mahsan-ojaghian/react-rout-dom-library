@@ -1,3 +1,4 @@
+import { useState } from "react";
 import MeetUpList from "../components/meetups/MeetUpList";
 const mydata = [
   {
@@ -75,6 +76,23 @@ const mydata = [
 ];
 
 function AllMeetUpsPage() {
+  const [loading, setLoading] = useState(true);
+  fetch(
+    "https://react-getting-started-512ed-default-rtdb.firebaseio.com/meetups.json"
+  )
+    .then((response) => {
+      response.json();
+    })
+    .then((data) => {
+      setLoading(false);
+    });
+  if (loading) {
+    return (
+      <section>
+        <h1>Loading...</h1>
+      </section>
+    );
+  }
   return (
     <section>
       <h1>All meetUp</h1>
